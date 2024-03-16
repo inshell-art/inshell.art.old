@@ -1,0 +1,49 @@
+/* Prime.module.css */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Adjusted to space content */
+  align-items: center;
+  background-color: rgb(28, 28, 28);
+  padding: 20px;
+  width: 100vw;
+  height: 100vh; /* Ensure the container takes full height */
+}
+
+.primeNumber {
+  color: #006100;
+  font-size: 100px;
+}
+
+.formContainer {
+  margin-top: auto; /* This pushes the form to the bottom */
+  padding-bottom: 100px; /* Adjusts distance from the bottom */
+}
+
+/* Prime.module.css */
+.input,
+.button {
+  height: 40px; /* Specify a height */
+  padding: 1px;
+  font-size: 16px; /* Match font sizes */
+  border: 0px solid #000000; /* Ensure border thickness is the same */
+  background-color: transparent; /* For the input */
+  color: #ffffff; /* Text color for input */
+  outline: none;
+}
+
+.input {
+  border-radius: 4px 0 0 4px; /* Rounded corners on the left side for the input */
+  border-right: none; /* Optional: Remove the right border of the input for a seamless look */
+}
+
+.button {
+  background-color: #000000; /* Button color */
+  color: #006100;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 0 4px 4px 0; /* Rounded corners on the right side for the button */
+  border-left: none; /* Optional: Remove the left border of the button for a seamless look */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}

@@ -1,0 +1,8 @@
+/* App.module.css */
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Make the app fill the entire viewport height */
+  background-color: grey;
+}

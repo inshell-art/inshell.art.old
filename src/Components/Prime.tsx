@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import styles from "./Prime.module.css"; // Import the styles
 
 // Prime checking function
 const isPrime = (num: number): boolean => {
@@ -29,23 +30,28 @@ const Prime: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const maxDigits = 15;
-    const digits = text.length > maxDigits ? maxDigits : text.length; // Limit digits to 10 to manage computation
+    const digits = text.length > maxDigits ? maxDigits : text.length; // Limit digits to manage computation
     const generatedPrime = generateRandomPrime(digits);
     setPrime(generatedPrime);
   };
 
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          value={text}
-          onChange={(e) => setText(e.target.value)}
-          placeholder="Enter text"
-        />
-        <button type="submit">Generate Prime</button>
-      </form>
-      {prime !== null && <p>Random Prime: {prime}</p>}
+    <div className={styles.container}>
+      {prime !== null && <p className={styles.primeNumber}>{prime}</p>}
+      <div className={styles.formContainer}>
+        <form onSubmit={handleSubmit}>
+          <input
+            className={styles.input}
+            type="text"
+            value={text}
+            onChange={(e) => setText(e.target.value)}
+            placeholder="Your thought now..."
+          />
+          <button type="submit" className={styles.button}>
+            Gen
+          </button>
+        </form>
+      </div>
     </div>
   );
 };
