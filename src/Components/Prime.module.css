@@ -15,15 +15,16 @@
   color: #006100;
   font-size: 50px;
   position: absolute; /* Use absolute positioning */
-  bottom: 60%; /* Adjust based on the total height of the formContainer */
+  bottom: 50%; /* Adjust based on the total height of the formContainer */
   transform: translateY(50%); /* Precisely control the vertical position */
 }
 
 .formContainer {
   display: flex; /* Ensure form elements are aligned horizontally */
   gap: 8px; /* Adds some space between the input and the button */
-  position: relative; /* Establish a positioning context */
-  margin-bottom: 100px; /* Maintain a space from the bottom */
+  position: absolute; /* Establish a positioning context */
+  margin-bottom: 10px; /* Maintain a space from the bottom */
+  bottom: 30%; /* Align the form to the bottom */
 }
 
 .input,

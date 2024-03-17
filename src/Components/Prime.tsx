@@ -29,7 +29,7 @@ const Prime: React.FC = () => {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const maxDigits = 15;
+    const maxDigits = 12;
     const digits = text.length > maxDigits ? maxDigits : text.length; // Limit digits to manage computation
     const generatedPrime = generateRandomPrime(digits);
     setPrime(generatedPrime);
