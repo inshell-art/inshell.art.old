@@ -12,3 +12,17 @@
 .link:hover {
   color: #006100; /* Change link color on hover */
 }
+
+.icon_gh {
+  width: 16px; /* Example size, adjust as needed */
+  height: auto;
+  margin: 0 5px; /* Add some spacing around icons if desired */
+  opacity: 0.6; /* Set opacity to 60% */
+}
+
+.icon_x {
+  width: 14px; /* Example size, adjust as needed */
+  height: auto;
+  margin: 0 5px; /* Add some spacing around icons if desired */
+  opacity: 0.6; /* Set opacity to 60% */
+}

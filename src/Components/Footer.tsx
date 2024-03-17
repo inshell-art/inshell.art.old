@@ -1,5 +1,7 @@
 import React from "react";
 import styles from "./Footer.module.css"; // Import the CSS module
+import githubIcon from "../assets/icon-github.svg";
+import xIcon from "../assets/icon-x.svg";
 
 const Footer: React.FC = () => {
   return (
@@ -17,7 +19,7 @@ const Footer: React.FC = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        GH
+        <img src={githubIcon} alt="GitHub" className={styles.icon_gh} />
       </a>
       <a
         className={styles.link} // Apply styles from CSS module
@@ -25,7 +27,7 @@ const Footer: React.FC = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        X
+        <img src={xIcon} alt="X" className={styles.icon_x} />
       </a>
     </footer>
   );
