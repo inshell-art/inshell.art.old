@@ -1,49 +1,51 @@
-/* Prime.module.css */
+/* Prime.module.css adjustments */
+
 .container {
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Adjusted to space content */
+  justify-content: center; /* Center children vertically */
   align-items: center;
   background-color: rgb(28, 28, 28);
   padding: 20px;
   width: 100vw;
-  height: 100vh; /* Ensure the container takes full height */
+  height: 100vh;
 }
 
 .primeNumber {
   color: #006100;
-  font-size: 100px;
+  font-size: 50px;
+  position: absolute; /* Use absolute positioning */
+  bottom: 60%; /* Adjust based on the total height of the formContainer */
+  transform: translateY(50%); /* Precisely control the vertical position */
 }
 
 .formContainer {
-  margin-top: auto; /* This pushes the form to the bottom */
-  padding-bottom: 100px; /* Adjusts distance from the bottom */
+  display: flex; /* Ensure form elements are aligned horizontally */
+  gap: 8px; /* Adds some space between the input and the button */
+  position: relative; /* Establish a positioning context */
+  margin-bottom: 100px; /* Maintain a space from the bottom */
 }
 
-/* Prime.module.css */
 .input,
 .button {
-  height: 40px; /* Specify a height */
-  padding: 1px;
-  font-size: 16px; /* Match font sizes */
-  border: 0px solid #000000; /* Ensure border thickness is the same */
+  height: 40px; /* Ensures input and button have the same height */
+  padding: 0 12px; /* Adjust padding as necessary */
+  font-size: 16px;
   background-color: transparent; /* For the input */
-  color: #ffffff; /* Text color for input */
+  color: #ffffff; /* Text color for the input */
   outline: none;
 }
 
 .input {
-  border-radius: 4px 0 0 4px; /* Rounded corners on the left side for the input */
-  border-right: none; /* Optional: Remove the right border of the input for a seamless look */
+  border: 0px solid #ffffff; /* Adds a border to make the input visible */
 }
 
 .button {
+  height: 30px; /* Adjusted to fit the button's content */
   background-color: #000000; /* Button color */
-  color: #006100;
-  padding-left: 10px;
-  padding-right: 10px;
-  border-radius: 0 4px 4px 0; /* Rounded corners on the right side for the button */
-  border-left: none; /* Optional: Remove the left border of the button for a seamless look */
+  color: #006100; /* Button text color */
+  border: 1px solid #006100; /* Makes the button's border visible and consistent with its text color */
+  border-radius: 4px; /* Adjusted to match input border-radius */
   cursor: pointer;
   transition: background-color 0.3s ease;
 }

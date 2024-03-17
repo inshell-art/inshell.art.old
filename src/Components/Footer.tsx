@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "./Footer.module.css"; // Import the CSS module
 
 const Footer: React.FC = () => {
   return (
@@ -10,21 +11,21 @@ const Footer: React.FC = () => {
         textAlign: "right",
       }}
     >
-      <p>Connect with me:</p>
       <a
-        href="https://twitter.com/yourTwitterHandle"
+        className={styles.link} // Apply styles from CSS module
+        href="https://github.com/inshell-art"
         target="_blank"
         rel="noopener noreferrer"
-        style={{ marginRight: "10px" }}
       >
-        Twitter
+        GH
       </a>
       <a
-        href="https://github.com/yourGitHubUsername"
+        className={styles.link} // Apply styles from CSS module
+        href="https://twitter.com/inshell_art"
         target="_blank"
         rel="noopener noreferrer"
       >
-        GitHub
+        X
       </a>
     </footer>
   );
