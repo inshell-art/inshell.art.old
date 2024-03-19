@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: center; /* Center children vertically */
   align-items: center;
-  background-color: rgb(28, 28, 28);
+
   padding: 0px;
   width: 100vw;
   height: 100vh;
@@ -14,6 +14,7 @@
 .primeNumber {
   color: #006100;
   font-size: 50px;
+  font-weight: 900;
   position: absolute; /* Use absolute positioning */
   bottom: 50%; /* Adjust based on the total height of the formContainer */
   transform: translateY(50%); /* Precisely control the vertical position */
@@ -27,23 +28,20 @@
   bottom: 30%; /* Align the form to the bottom */
 }
 
-.input,
-.button {
-  height: 40px; /* Ensures input and button have the same height */
-  padding: 0 12px; /* Adjust padding as necessary */
-  font-size: 16px;
-  background-color: transparent; /* For the input */
-  color: #ffffff; /* Text color for the input */
-  outline: none;
-}
-
 .input {
-  border: 0px solid #ffffff; /* Adds a border to make the input visible */
+  outline: none;
+  height: 40px;
+  padding: 0 12px;
+  font-size: 16px;
+  border: 0px solid #ffffff;
+  color: #006100;
+  background-color: transparent; /* For the input */
 }
 
 .button {
   height: 30px; /* Adjusted to fit the button's content */
-  background-color: #000000; /* Button color */
+  padding: 0 12px; /* Adjust padding as necessary */
+  background-color: transparent; /* Transparent background */
   color: #006100; /* Button text color */
   border: 1px solid #006100; /* Makes the button's border visible and consistent with its text color */
   border-radius: 4px; /* Adjusted to match input border-radius */

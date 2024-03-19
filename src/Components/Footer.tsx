@@ -19,7 +19,7 @@ const Footer: React.FC = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <img src={githubIcon} alt="GitHub" className={styles.icon_gh} />
+        <img src={githubIcon} alt="GitHub" />
       </a>
       <a
         className={styles.link} // Apply styles from CSS module
@@ -27,7 +27,7 @@ const Footer: React.FC = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <img src={xIcon} alt="X" className={styles.icon_x} />
+        <img src={xIcon} alt="X" />
       </a>
     </footer>
   );
